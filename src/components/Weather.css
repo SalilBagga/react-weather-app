@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+body {
+  font-family: Poiret One;
+}
+.articleBox {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  /* box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15); */
+}
+.whiteBoxDetails {
+  background: white;
+  width: 45vw;
+  height: 30vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  align-items: center;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
+.whiteBoxDetails .iconBox {
+  font-family: weathericons;
+  font-size: 100px;
+}
+.whiteBoxDetails .infoBox {
+  font-size: 40px;
+}
+.blackBox {
+  background: black;
+  color: white;
+  width: 45vw;
+  height: 20vh;
+  align-items: center;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+}
