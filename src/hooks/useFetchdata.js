@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 
+//config
+import API_KEY from '../config/config';
 export const useFetchdata = (input) => {
   const [error, setError] = useState(null);
   const [invalidInput, setInvalidInput] = useState(false);
   const [data, setData] = useState(null);
 
   const fetchdata = async () => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=${process.env.REACT_APP_WEATHER_API_KEY}`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=${API_KEY}`;
 
     setError(null);
     // sign the user out
