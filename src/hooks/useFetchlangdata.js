@@ -34,5 +34,5 @@ export const useFetchlangdata = (input) => {
     }
   }, [input]);
 
-  return { fetchlangdata, error, invalidInput, data };
+  return { error, invalidInput, data };
 };

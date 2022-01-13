@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
 
 //css
@@ -7,11 +7,10 @@ const position = [28.7041, 77.1025];
 
 export default function Mapbox({ currentPos, setCurrentPos }) {
   function MyComponent() {
-    const map = useMapEvents({
+    useMapEvents({
       click: (e) => {
         const latlang = e.latlng;
         setCurrentPos([latlang.lat, latlang.lng]);
-        // console.log('Lat is ' + latlang.lat + 'long is ' + latlang.lng);
       },
     });
     return null;

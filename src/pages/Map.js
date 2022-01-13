@@ -8,7 +8,7 @@ import Alertpop from '../components/Alertpop';
 import { useFetchlangdata } from '../hooks/useFetchlangdata';
 export default function Map() {
   const [currentPos, setCurrentPos] = useState([28.7041, 77.1025]);
-  const { error, invalidInput, data } = useFetchlangdata(currentPos);
+  const { error, data } = useFetchlangdata(currentPos);
   return (
     <div>
       {error && <Alertpop error={error} />}

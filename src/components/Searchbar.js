@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Alertpop from './Alertpop';
 export default function Searchbar({ setCity, invalidInput, error }) {
   const [emptyCity, setEmptyCity] = useState(false);
   const handleSubmit = (event) => {
